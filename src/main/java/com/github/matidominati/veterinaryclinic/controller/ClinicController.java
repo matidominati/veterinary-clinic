@@ -26,8 +26,7 @@ public class ClinicController {
     public Visit createVisit (LocalDateTime visitDateTime){
         return visitService.createVisit(visitDateTime);
     }
-    @DeleteMapping("/visit")
-    public Visit
+
 
 
 }
