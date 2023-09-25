@@ -1,14 +1,14 @@
 package com.github.matidominati.veterinaryclinic.model;
 
 import lombok.AllArgsConstructor;
-import lombok.Builder;
 import lombok.Data;
+import lombok.EqualsAndHashCode;
 
-import java.util.ArrayList;
 import java.util.List;
 
+@EqualsAndHashCode(callSuper = true)
 @Data
-@Builder
+@AllArgsConstructor
 public class Client extends User {
     private List<Pet> pets;
     private int timeZoneOffsetHours;

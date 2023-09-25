@@ -4,9 +4,9 @@ import com.github.matidominati.veterinaryclinic.model.Client;
 import com.github.matidominati.veterinaryclinic.model.Pet;
 import com.github.matidominati.veterinaryclinic.model.Vet;
 import com.github.matidominati.veterinaryclinic.model.Visit;
+import lombok.AllArgsConstructor;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -20,6 +20,7 @@ import java.util.Map;
 
 @Service
 @RequiredArgsConstructor
+@AllArgsConstructor
 public class VisitService {
     private final Vet vet;
     private final Client client;
